@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>user_name</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+      var name = localStorage.getItem('userName');
+      setTimeout(() => {
+        name ? $('#successMsz')[0].innerText = "Welcome " + name + ". You are in landing page." : window.location.href = 'First';
+      }, 100);
+      $(window).unload(function() {
+           localStorage.removeItem('userName');
+       });
+    });
+    </script>
+  </head>
+  <body>
+    <h1>successfully logged in</h1>
+<p id="successMsz"></p>
+  </body>
+</html>
