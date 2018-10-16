@@ -1,12 +1,9 @@
-2018-10-16T10:06:05.254Z : Connected in login js
-2018-10-16T10:06:05.254Z : Connected in get data js
-2018-10-16T10:06:19.048Z : date::
-2018-10-16T10:06:19.049Z : query::INSERT INTO User (name,password,date) VALUES ('admin','admin','1539684379048')
-2018-10-16T10:06:19.050Z : User name = admin, password is admin
-2018-10-16T10:06:19.059Z : The solution is: 
-2018-10-16T10:06:20.863Z : queryselect max(date) as date from User where name='admin'
-2018-10-16T10:06:20.942Z : The solution is: 
-2018-10-16T10:06:20.942Z : date value is :Tue Oct 16 2018 10:06:20 GMT+0000 (Coordinated Universal Time)
-2018-10-16T10:06:23.430Z : queryselect max(date) as date from User where name='admin'
-2018-10-16T10:06:23.437Z : The solution is: 
-2018-10-16T10:06:23.437Z : date value is :Tue Oct 16 2018 10:06:23 GMT+0000 (Coordinated Universal Time)
+2018-10-16T12:06:15.491Z : Connected in login js
+2018-10-16T12:06:15.491Z : Connected in get data js
+2018-10-16T12:06:24.424Z : date::
+2018-10-16T12:06:24.424Z : query::INSERT INTO User (name,password,date) VALUES ('admin','admin','1539691584423')
+2018-10-16T12:06:24.425Z : User name = admin, password is admin
+2018-10-16T12:06:24.446Z : The solution is: 
+2018-10-16T12:06:26.164Z : queryselect max(date) as date from User where name='admin'
+2018-10-16T12:06:26.242Z : The solution is: 
+2018-10-16T12:06:26.243Z : date value is :Tue Oct 16 2018 12:06:26 GMT+0000 (Coordinated Universal Time)

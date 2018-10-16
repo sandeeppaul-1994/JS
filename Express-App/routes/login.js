@@ -1,7 +1,7 @@
 var express = require('express')
 var router = express.Router();
 var app     = express();
-var logger = require('../logger').Logger;
+var logger = require('../views/logger').Logger;
 //var con = require('../con.js');
 app.use(express.static(__dirname + '/views'));
 

@@ -1,9 +1,9 @@
 var express = require('express')
 var router = express.Router();
+var logger = require('../views/logger').Logger;
 var app     = express();
 app.use(express.static(__dirname + '/views'));
 var mysql = require('mysql');
-var logger = require('../logger').Logger;
 var date="";
 
 var con = mysql.createConnection({
