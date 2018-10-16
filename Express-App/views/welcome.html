@@ -6,13 +6,27 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
        $(document).ready(function(){
-      var name = localStorage.getItem('userName');
-      setTimeout(() => {
-        name ? $('#successMsz')[0].innerText = "Welcome " + name + ". You are in landing page." : window.location.href = 'First';
-      }, 100);
-      $(window).unload(function() {
-           localStorage.removeItem('userName');
-       });
+       var name = localStorage.getItem('userName');
+      // setTimeout(() => {
+      //   name ? $('#successMsz')[0].innerText = "Welcome " + name + ". You are in landing page." : window.location.href = 'First';
+      // }, 100);
+      // $(window).unload(function() {
+      //      localStorage.removeItem('userName');
+
+
+      //  });
+      $.post("getdata",{user: name}, function(data, status){
+            
+            if(data)
+              {
+                console.log(data);
+                $('#successMsz')[0].innerText = "Welcome " + data["name"] + ". You are in landing page. Your last login time was " + data["date"];
+              }else{
+                alert('Username or password incorrect');
+              }
+              //localStorage.removeItem('userName');
+          })
+            
     });
     </script>
   </head>
