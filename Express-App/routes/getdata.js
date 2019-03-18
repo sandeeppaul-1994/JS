@@ -7,9 +7,9 @@ var mysql = require('mysql');
 var date="";
 
 var con = mysql.createConnection({
-  host: "mysqlnode.cuwxq1kvsiv9.us-east-1.rds.amazonaws.com",
+  host: "connection",
   user: "admin",
-  password: "administrator",
+  password: "pwd",
   database: "first",
   port: 3306
 });
