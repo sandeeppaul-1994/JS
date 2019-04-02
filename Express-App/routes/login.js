@@ -5,7 +5,7 @@ var logger = require('../views/logger').Logger;
 //var con = require('../con.js');
 app.use(express.static(__dirname + '/views'));
 
-var mysql = require('mysql');
+var mysql = require('mssql');
 // var mydate = require('current-date');
 
 var con = mysql.createConnection({
